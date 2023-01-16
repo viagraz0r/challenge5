@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--SoftMagenta: hsl(300, 69%, 71%);
+
+	--FontBody: 'Open Sans', sans-serif;
+	--FontHeading: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--FontBody);
+	background-color: var(--Violet);
+	color: white;
+	margin: 40px;
+}
+
+.logo {
+	margin-bottom: 30px;
+}
+
+.logo img {
+	width: 55%;
+}
+.section1 {
+	margin-bottom: 65px;
+}
+
+.mockup-container {
+	height: 100%;
+}
+
+.mockup-container img {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.section2 {
+	text-align: center;
+}
+
+.section2 h1 {
+	margin-bottom: 30px;
+	font-family: var(--FontHeading);
+	font-size: 1.25em;
+	font-weight: 600;
+}
+
+.section2 p {
+	margin-bottom: 30px;
+	font-size: 1em;
+}
+
+.btn-register {
+	margin-bottom: 50px;
+}
+
+.btn-register a {
+	padding: 10px 65px;
+	background-color: white;
+	border: 1px solid;
+	border-radius: 50px;
+	text-decoration: none;
+	display: inline-block;
+	font-family: var(--FontHeading);
+	font-size: 1.25em;
+	color: var(--Violet);
+	cursor: pointer;
+}
+
+.social-container {
+	display: flex;
+	justify-content: center;
+	column-gap: 25px;
+}
+
+.social-container a {
+	border: 2px solid;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 1px;
+}
+
+footer {
+	margin-top: 40px;
+}
+.attribution {
+	font-size: 0.75em;
+	text-align: center;
+}
+.attribution a {
+	color: white;
+}
+
+@media screen and (min-width: 413px) {
+	.section2 h1 {
+		font-size: 1.75em;
+	}
+
+	.section2 p {
+		margin-bottom: 30px;
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.section1 {
+		margin-bottom: 115px;
+	}
+
+	.section2 h1 {
+		margin-bottom: 60px;
+		font-size: 2.5em;
+	}
+
+	.section2 p {
+		margin-bottom: 80px;
+		font-size: 1.75em;
+	}
+
+	.social-container a {
+		border: 2px solid;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+		padding-top: 9px;
+		padding-left: 0px;
+	}
+	.btn-register {
+		margin-bottom: 80px;
+	}
+
+	.btn-register a {
+		font-size: 1.75em;
+		padding: 10px 140px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		margin: 75px;
+	}
+	.section2 h1 {
+		font-size: 3em;
+	}
+
+	.section2 p {
+		margin-bottom: 80px;
+		font-size: 2em;
+	}
+	.btn-register {
+		margin-bottom: 80px;
+	}
+
+	.btn-register a {
+		font-size: 1.75em;
+		padding: 15px 160px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+}

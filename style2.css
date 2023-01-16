@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--SoftMagenta: hsl(300, 69%, 71%);
+
+	--FontBody: 'Open Sans', sans-serif;
+	--FontHeading: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(images/bg-mobile.svg) no-repeat top;
+	background-color: var(--Violet);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 35px 0;
+	font-family: var(--FontBody);
+	color: white;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+main {
+	max-width: 305px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section1 {
+	margin-bottom: 70px;
+}
+
+.section1 .logo img {
+	width: 160px;
+	margin-bottom: 60px;
+}
+
+.section2 {
+	margin-bottom: 35px;
+}
+
+.section2 h1 {
+	font-family: var(--FontHeading);
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.section2 p {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.btn-register {
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.36);
+	width: 202px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.btn-register:hover {
+	background-color: var(--SoftMagenta);
+}
+
+.btn-register a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	font-family: var(--FontHeading);
+	color: var(--Violet);
+}
+
+.btn-register a:hover {
+	color: white;
+}
+
+.social-container {
+	margin: 30px 0;
+}
+
+.social-container a {
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 5px 0 0 1px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.social-container a:last-child {
+	margin-right: 0;
+}
+
+.social-container a:hover {
+	color: var(--SoftMagenta);
+	border: 2px solid var(--SoftMagenta);
+}
+
+.social-container .tw {
+	padding: 5px 0 0 1.2px;
+}
+
+.social-container .ins {
+	padding: 5px 0 0 0.8px;
+}
+
+.attribution {
+	font-size: 0.75em;
+	text-align: center;
+}
+.attribution a {
+	color: white;
+}
+
+@media screen and (min-width: 1100px) {
+	body {
+		background: url(images/bg-desktop.svg) no-repeat fixed;
+		background-color: var(--Violet);
+		height: 100vh;
+	}
+	main {
+		max-width: 1100px;
+		height: 100%;
+		display: flex;
+		gap: 30px;
+		position: relative;
+	}
+
+	.section1 {
+		width: 630px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 0;
+	}
+
+	.section2 {
+		width: 470px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+		margin-bottom: 0;
+	}
+
+	.section2 h1 {
+		font-size: 35px;
+	}
+
+	.social-container {
+		display: flex;
+		position: absolute;
+		right: 45px;
+		bottom: 0;
+	}
+}
